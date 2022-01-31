@@ -1,0 +1,80 @@
+.about {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.container-about-title {
+  @include font(700, 36px, 42px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.about-list__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+}
+
+
+
+.about-border {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about-border__title{
+  @include font(500, 16px, 19px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-color);
+  margin-bottom: 10px;
+}
+.about-border__text {
+  @include font(400, 16px, 19px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+  margin-bottom: 16px;
+}
+
+.icons-about {
+  display: flex;
+  justify-content: center;
+}
+.icons-about__item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+
+.icons-about__svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.icons-about__link {
+  @extend %icons;
+  transition-property: color, background-color;
+  color: #afb1b8;
+  background-color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
+}

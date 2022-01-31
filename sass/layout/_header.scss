@@ -1,0 +1,105 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container__logo-header {
+  @extend %logo;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.contact-list__link {
+  @include font(500, 14px, 16px);
+  letter-spacing: 0.02em;
+  color: var(--first-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.contact-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+// .contact-list {
+//   display: flex;
+// }
+// .header-container {
+//   display: flex;
+//   align-items: center;
+// }
+
+.contact-list--current {
+  color: var(--accent-color);
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    left: 0;
+    bottom: 0;
+  }
+}
+
+// .header-contact {
+//   display: flex;
+//   margin-left: auto;
+// }
+
+.header-contact__letter {
+  @include font(500, 14px, 16px);
+  color: var(--second-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+// .header-contact__letter {
+//   display: flex;
+//   align-items: center;
+
+// }
+
+.header-contact__svg {
+  margin-right: 10px;
+  fill: currentColor;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.header-contact__phone {
+  margin-right: 10px;
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.header-contact__letter,
+.header-contact__phone {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
