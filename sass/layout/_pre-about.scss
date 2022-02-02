@@ -1,26 +1,32 @@
 .pre-about {
-  padding-bottom: 94px;
+  @media screen and(min-width:1200px) {
+    padding-bottom: 94px;
+  }
 }
 .pre-about-list {
-  display: flex;
+  display: none;
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
-
-
 .pre-about__title {
-  @include font(700, 36px, 42px);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--first-color);
-  margin-bottom: 50px;
+  display: none;
+  @media screen and(min-width:1200px) {
+    @include font(700, 36px, 42px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--first-color);
+    margin-bottom: 50px;
+    display: block;
+  }
 }
-
 .pre-about-list__item {
   position: relative;
   &:not(:nth-child(3n)) {
     margin-right: 30px;
   }
 }
-.pre-about-div__text{
+.pre-about-div__text {
   @include font(700, 14px, 16px);
   color: var(--other-color);
 

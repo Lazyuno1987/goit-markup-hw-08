@@ -1,11 +1,12 @@
 @import './utils/variables';
-@import "./utils/mixin";
-@import"./utils/placeholders";
+@import './utils/mixin';
+@import './utils/placeholders';
 @import './base/reset';
 @import './utils/hidden';
 @import './base/common';
 @import './components/container';
 @import './layout/header';
+@import './layout/main';
 @import './layout/hero';
 @import './layout/pre-about';
 @import './layout/about';
@@ -14,4 +15,3 @@
 @import './layout/filters';
 @import './layout/content';
 @import './components/modal';
-

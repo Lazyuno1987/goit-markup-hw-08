@@ -1,35 +1,38 @@
-%btn{
-    min-width: 200px;  
-    min-height: 50px;
-    background-color: var(--accent-color);
-    color: var(--other-color);
-    @include font(700, 16px, 30px);
-    border-radius: 4px;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    transition-property: background-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    &:hover,
-    &:focus {
+%btn {
+  min-width: 200px;
+  min-height: 50px;
+  background-color: var(--accent-color);
+  color: var(--other-color);
+  @include font(700, 16px, 30px);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  &:hover,
+  &:focus {
     background-color: #188ce8;
-    }
+  }
 }
 
-%icons{
-    border-radius: 50%;
-    display: flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+%icons {
+  border-radius: 50%;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
-%logo{
-    font-family: var(--font-second);
+%logo {
+  font-family: var(--font-second);
+  @include font(700, 24px, 28px);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  @media screen and(min-width:1200px) {
     @include font(700, 26px, 31px);
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
+  }
 }
