@@ -100,7 +100,6 @@ ul {
 
 img {
   display: block;
-  width: 100%;
   height: auto;
   max-width: 100%;
 }
@@ -420,7 +419,7 @@ img {
 }
 
 .about {
-  background: #f5f4fa;
+  background-color: gray;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -475,13 +474,13 @@ img {
 @media screen and (min-width: 768px) {
   .about-list__item {
     margin-right: 30px;
-    width: calc(100% / 2 - 30px);
+    flex-basis: calc(100% / 2 - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .about-list__item {
-    width: calc(100% / 4 - 30px);
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
@@ -588,19 +587,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .clients__item {
-    width: calc(100% / 2 - 30px);
+    flex-basis: calc(100% / 2 - 30px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: calc(100% / 6 - 30px);
+    flex-basis: calc(100% / 6 - 30px);
   }
 }
 
