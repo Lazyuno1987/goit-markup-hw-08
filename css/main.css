@@ -129,18 +129,6 @@ img {
   }
 }
 
-.header {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-left: 215px;
-    padding-right: 215px;
-  }
-}
-
 .header-tab {
   border-bottom: 1px solid #ececec;
 }
@@ -241,7 +229,7 @@ img {
 @media screen and (min-width: 1200px) {
   .header-contact {
     display: flex;
-    margin-left: auto;
+    margin-left: 305px;
   }
 }
 
