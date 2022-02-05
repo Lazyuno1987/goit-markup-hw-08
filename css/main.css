@@ -441,16 +441,49 @@ img {
 }
 
 .main {
-  background: #2f303a;
+  background-color: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header1x.jpg);
-  margin-left: auto;
-  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/studia/Hero-fon/Hero-mob1x.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 118px;
+  padding-bottom: 198px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/studia/Hero-fon/Hero-mob2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/studia/Hero-fon/Hero-tab1x.jpg);
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/studia/Hero-fon/Hero-tab2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/studia/Hero-fon/Hero-des1x.jpg);
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/studia/Hero-fon/Hero-des2x.jpg);
+  }
 }
 
 .main-title {
@@ -460,10 +493,10 @@ img {
   color: var(--other-color);
   text-transform: uppercase;
   margin-bottom: 30px;
-  max-width: 696px;
   letter-spacing: 0.06em;
   margin-left: auto;
   margin-right: auto;
+  max-width: 360px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -471,6 +504,7 @@ img {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36364;
+    max-width: 696px;
   }
 }
 
@@ -627,6 +661,12 @@ img {
   margin-right: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .pre-about-list__item {
+    width: 370px;
+  }
+}
+
 .pre-about-div__text {
   font-weight: 700;
   font-size: 14px;
@@ -648,7 +688,7 @@ img {
 }
 
 .about {
-  background-color: gray;
+  background: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -697,6 +737,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -710,6 +751,28 @@ img {
   .about-list__item {
     flex-basis: calc(100% / 4 - 30px);
   }
+}
+
+@media screen and (min-width: 480px) {
+  .about-list__item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-list__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list__item {
+    width: 270px;
+  }
+}
+
+.about-list__img {
+  margin: 0 auto;
 }
 
 .about-border {
@@ -1171,7 +1234,6 @@ img {
 .content {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: grey;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1211,7 +1273,28 @@ img {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .content-list__item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-list__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content-list__item {
+    width: 270px;
+  }
+}
+
 .content-list__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -1268,6 +1351,7 @@ img {
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
+  flex-grow: 1;
 }
 
 .content-border__title {
@@ -1299,14 +1383,21 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--other-color);
   border-radius: 4px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close {
@@ -1345,10 +1436,18 @@ img {
 .modal-form__text {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: var(--first-color);
   text-align: center;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .div-forms {
@@ -1452,11 +1551,19 @@ img {
 
 .modal-lables {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71429;
+  font-size: 12px;
+  line-height: 1.16667;
   color: #757575;
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-lables {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+  }
 }
 
 .modal-link {
