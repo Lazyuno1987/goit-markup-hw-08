@@ -230,8 +230,23 @@
   @include font(500, 40px, 47px);
   color: var(--first-color);
   letter-spacing: 0.02em;
+  position: relative;
   &--current {
     color: var(--accent-color);
+  }
+}
+
+.mob-menu-list__link--current {
+  color: var(--accent-color);
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    left: 0;
+    bottom: 0;
   }
 }
 

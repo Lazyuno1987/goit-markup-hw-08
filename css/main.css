@@ -389,10 +389,26 @@ img {
   line-height: 1.175;
   color: var(--first-color);
   letter-spacing: 0.02em;
+  position: relative;
 }
 
 .mob-menu-list__link--current {
   color: var(--accent-color);
+}
+
+.mob-menu-list__link--current {
+  color: var(--accent-color);
+}
+
+.mob-menu-list__link--current::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  left: 0;
+  bottom: 0;
 }
 
 .mobile-contact {
@@ -1383,7 +1399,7 @@ img {
 
 .modal {
   position: absolute;
-  width: 450px;
+  width: 100%;
   height: 609px;
   background-color: var(--other-color);
   border-radius: 4px;
@@ -1391,6 +1407,12 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
