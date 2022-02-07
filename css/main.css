@@ -421,10 +421,18 @@ img {
 
 .mobile-contact__phone {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17647;
+  font-size: 30px;
+  line-height: 1.33333;
   color: var(--accent-color);
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-contact__phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17647;
+  }
 }
 
 .mobile-contact__letter {
@@ -450,10 +458,18 @@ img {
 
 .mob-sotial-list__link {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22222;
+  font-size: 12px;
+  line-height: 1.83333;
   color: var(--accent-color);
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 480px) {
+  .mob-sotial-list__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+  }
 }
 
 .main {

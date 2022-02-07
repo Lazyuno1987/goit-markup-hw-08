@@ -261,9 +261,12 @@
 }
 
 .mobile-contact__phone {
-  @include font(500, 34px, 40px);
+  @include font(500, 30px, 40px);
   color: var(--accent-color);
   letter-spacing: 0.02em;
+  @media screen and(min-width:480px) {
+    @include font(500, 34px, 40px);
+  }
 }
 
 .mobile-contact__letter {
@@ -285,7 +288,10 @@
 }
 
 .mob-sotial-list__link {
-  @include font(500, 18px, 22px);
+  @include font(500, 12px, 22px);
   color: var(--accent-color);
   letter-spacing: 0.02em;
+  @media screen and(min-width:480px) {
+    @include font(500, 18px, 22px);
+  }
 }
