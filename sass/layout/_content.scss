@@ -18,6 +18,7 @@
 .content-list__item {
   margin-bottom: 30px;
   width: 100%;
+  border-bottom: 1px solid #eeeeee;
 
   @media screen and(min-width:768px) {
     margin-right: 30px;
@@ -58,18 +59,6 @@
 .content-div {
   position: relative;
   overflow: hidden;
-
-  // @media screen and (min-width: 480px) {
-  //   width: 450px;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   width: 354px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   width: 270px;
-  // }
 }
 
 .content-div__img {
@@ -96,7 +85,6 @@
 .content-overlay__text-hidden {
   @include font(400, 18px, 28px);
   color: var(--other-color);
-  // width: 322px;
   letter-spacing: 3%;
   padding-top: 63px;
   padding-left: 24px;
@@ -106,7 +94,6 @@
   background: var(--other-color);
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;

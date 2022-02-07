@@ -1,15 +1,9 @@
-// .header {
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   @media screen and(min-width:1200px) {
-//     padding-left: 215px;
-//     padding-right: 215px;
-//   }
-// }
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-tab {
-  border-bottom: 1px solid #ececec;
-
+  position: relative;
   @media screen and(min-width:768px) {
     display: flex;
   }
