@@ -83,11 +83,20 @@
 }
 
 .content-overlay__text-hidden {
-  @include font(400, 18px, 28px);
+  @include font(400, 14px, 28px);
   color: var(--other-color);
   letter-spacing: 3%;
-  padding-top: 63px;
-  padding-left: 24px;
+  padding: 50px 24px;
+  @media screen and (min-width: 480px) {
+    @include font(400, 18px, 28px);
+    padding: 77px 24px;
+  }
+  @media screen and (min-width: 480px) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 480px) {
+    padding: 63px 24px;
+  }
 }
 
 .content-border {

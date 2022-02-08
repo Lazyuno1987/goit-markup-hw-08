@@ -19,14 +19,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  @media screen and(max-width:479px) {
+  @media screen and(max-width:479px) and(max-height:535px) {
     max-width: 320px;
-    max-height: 560px;
-    padding-top: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-  }
+    min-height: 650px;
+    top: 70%;
+
   @media screen and(min-width:480px) {
     width: 480px;
     height: 609px;
@@ -175,6 +172,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  // @media screen and(max-width:479px) {
+  //   display: inline-flex;
+  // }
 }
 
 .modal-lables {
@@ -182,6 +182,7 @@
   color: #757575;
   display: flex;
   align-items: center;
+
   @media screen and(min-width:1200px) {
     @include font(400, 14px, 24px);
   }

@@ -1372,12 +1372,32 @@ img {
 
 .content-overlay__text-hidden {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55556;
+  font-size: 14px;
+  line-height: 2;
   color: var(--other-color);
   letter-spacing: 3%;
-  padding-top: 63px;
-  padding-left: 24px;
+  padding: 50px 24px;
+}
+
+@media screen and (min-width: 480px) {
+  .content-overlay__text-hidden {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55556;
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .content-overlay__text-hidden {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .content-overlay__text-hidden {
+    padding: 63px 24px;
+  }
 }
 
 .content-border {
@@ -1429,17 +1449,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-}
-
-@media screen and (max-width: 479px) {
-  .modal {
-    max-width: 320px;
-    max-height: 560px;
-    padding-top: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-  }
 }
 
 @media screen and (min-width: 480px) {
